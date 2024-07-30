@@ -8,3 +8,13 @@ The folder "Simulations" contains code related to 4 four distinct data-generatin
 
 The folder "Application" contains code and data for applying the proposed methodology to a real lung cancer dataset.
 
+As mentioned in the paper, we compare the statistical power and FDR control of five distinct Model-X knockoff methods in our simulations and application to real data: the parametric DTDCKe procedure, the non-parametric DTDCKe procedure, Vineknockoffs (Kurz, 2022), Gaussian knockoffs, and second-order knockoffs. For the Gaussian knockoffs, we utilize the minimum variance-based reconstructability (MVR) knockoffs as described by Spector and Janson (2022). Due to computational time constraints, we decided to separate the simulations for Vineknockoffs from the other competing methods. To distinguish these, we appended the word “Vineknockoffs” to the names of the corresponding files.
+
+
+References:
+
+Kurz, M. S. (2022). Vine copula based knockoff generation for high-dimensional controlled variable selection. arXiv preprint arXiv:2210.11196.
+
+Spector, A., & Janson, L. (2022). Powerful knockoffs via minimizing reconstructability. The Annals of Statistics, 50(1), 252-276.
+
+Vásquez, A. R., Urbina, J. U. M., Farías, G. G., & Escarela, G. (2024). Derandomized Truncated D-vine Copula Knockoffs with e-values to control the false discovery rate. arXiv preprint arXiv:2407.14002.
